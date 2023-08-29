@@ -3,7 +3,6 @@
 
 ### See it live at [jpscardoso97.github.io](https://jpscardoso97.github.io/)
 
-
-![Screenshot](/assets/scrnshot.jpg?raw=true)
+![Screenshot](/assets/scrnshot.png?raw=true)
 
 Credit to [imfunnie](https://github.com/imfunniee) for the template: [Foster by Fimbo](https://github.com/imfunniee/fimbo) 
