@@ -31,15 +31,17 @@
     <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay: 1000ms;">about</a>
     <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay: 1000ms;">work</a>
     <a id="contact" href="mailto:jocardoso55@gmail.com">contact me</a>
-    <!-- TBD <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">projects</a> -->
+    <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">projects</a>
     <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
         <h1>Joao Cardoso</h1>
         <h2>5+ years of Software Engineering | Duke University Masters in Artificial Intelligence</h2>
+        <a href="./assets/resume.pdf" target="_blank"><h2><u>View Resume</u></h2></a>
+        
         <div id="menu">
             <a onclick="showabout()">about</a>
             <a onclick="showwork()">work</a>
+            <a onclick="showprojects()">projects</a>
             <a href="mailto:jocardoso55@gmail.com">contact me</a>
-            <!-- TBD <a onclick="showprojects()">projects</a> -->
         </div>
         <table>
             <tr>
@@ -62,40 +64,53 @@
                 Here are some of the projects I've worked on recently. Feel free to explore:
             </p>
             <ul>
+
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>Portfolio</h3>
-                        <p>The Open-Source code for the Personal Portfolio this website is coming from! A minimal and
-                            ambient portfolio template for Developers! ⚡</p>
-                        <button class="btn_one"><a
-                                href="https://github.com/TheKaushikGoswami/thekaushikgoswami.github.io"
-                                style="color: inherit; text-decoration: none"> View Project </a></button>
-                    </div>
-                </div>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Olympus</h3>
-                        <p>An Application commands-based multi-purpose discord bot that can do most of the things that
-                            you require for your discord server.</p>
-                        <button class="btn_one"><a href="https://github.com/TheKaushikGoswami/Olympus"
-                                style="color: inherit; text-decoration: none"> View Project </a></button>
-                    </div>
-                </div>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Modmail Bot</h3>
-                        <p>A simple and efficient discord modmail bot written in Python language, using library named
-                            discord.py without any databse integration.</p>
+                        <h3>Pharmacity Ecommercet</h3>
+                        <p>.NET Microservice-based Ecommerce Platform designed specifically for the pharmaceutical industry.</p>
                         <button class="btn_one"><a href="https://github.com/TheKaushikGoswami/lyq-hangout-modmail"
                                 style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
                 </div>
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>100 Days, 100 Programs</h3>
-                        <p>An exhilarating journey of 100 Days, 100 Programs challenge, where I explore various
-                            programming languages and frameworks to build a diverse collection of practical
-                            applications. 🚀</p>
+                        <h3>Code Tales</h3>
+                        <p>Code tales is an educational web-app built on top of Python and Streamlit. It takes advantage of generative AI to create simple stories that will help you learn the basics of programming. ⚡</p>
+                        <button class="btn_one"><a
+                                href="https://github.com/jpscardoso97/code-tales"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>PBO Venue Subscription Sales Predictor</h3>
+                        <p>This project is an entry to the private <a href="https://github.com/jpscardoso97/nc-snakes-classifier"a>Kaggle competition "Classical Music Meets Classical ML"</a>. After experimentation with different feature engineering and model testing, built a Random Forest model achieving 96.4% AUROC score to predict which users would buy a yearly subscription at the Philarmonia Baroque Orchestra</p>
+                        <button class="btn_one"><a href="https://github.com/jpscardoso97/philarmoniab-kaggle"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Duke MEng in AI ChatBot - RAG from Scratch</h3>
+                        <p>This is a ChatBot that can answer specific questions about the Master's in AI at Duke University. It is an implementation of RAG without the use of any framework. It uses MiniLM model for embeddings, cosine similarity to find the best match and is build on top of OpenAI GPT3.5 Turbo</p>
+                        <button class="btn_one"><a
+                                href="https://github.com/jpscardoso97/code-tales"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>NC Snake Classifier</h3>
+                        <p>Computer Vision application able to classify the 38 most common snake species in North Carolina. A model was built on top of ResNet50 using transfer learning on a new personal image dataset (sourced from iNaturalist)</p>
+                        <button class="btn_one"><a href="https://github.com/jpscardoso97/nc-snakes-classifier"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Maintenance Tasks Manager</h3>
+                        <p>.NET platform to manage maintenance tasks. Leverages Docker compose to encapsulate the .NET application and automatically integrate with a MYSQL database and RabbitMQ message queue. 🚀</p>
                         <button class="btn_one"><a href="https://github.com/TheKaushikGoswami/100-Days-100-Programs"
                                 style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
