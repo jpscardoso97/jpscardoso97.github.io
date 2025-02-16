@@ -1,0 +1,17 @@
+{
+    "intro": "Hello, I'm João, a Software and AI Engineer based in the USA 🇺🇸",
+    "paragraphs": [
+        "I'm a tech entusiast and a lifelong learner, always looking to keep up with the latest technologies.",
+        "When I'm not working you're likely find me on the beach. I cherish family time and have a soft spot for four-legged friends 🐕."
+    ],
+    "workingGeniuses": [
+        {
+            "name": "Wonder",
+            "description": "The natural gift of pondering the possibility of greater potential and opportunity in a given situation."
+        },
+        {
+            "name": "Discernment",
+            "description": "The natural gift of intuitively and instinctively evaluating ideas and situations."
+        }
+    ]
+} 

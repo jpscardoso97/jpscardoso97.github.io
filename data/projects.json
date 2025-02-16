@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "name": "Music Journal",
+            "description": "Spotify integrated journal for personalized AI generated playlists",
+            "github": "https://github.com/jpscardoso97/music-journal",
+            "technologies": ["Next.js", "FastAPI", "MongoDB", "Redis", "Celery", "Ollama"]
+        },
+        {
+            "name": "Pharmacity Ecommerce",
+            "description": "Microservice-based Ecommerce Platform designed specifically for the pharmaceutical industry.",
+            "github": "https://github.com/jpscardoso97/pharmacity-ecommerce",
+            "technologies": ["C#", ".NET-Core", "GraphQL", "Microservices", "Docker"]
+        },
+        {
+            "name": "Portugal.ai",
+            "description": "Portugal AI Travel Companion 🇵🇹",
+            "github": "https://github.com/jpscardoso97/portugal-ai",
+            "technologies": [".NET-Blazor", "Semantic Kernel", "FastAPI", "MilvusDB", "EdTech"]
+        },
+        {
+            "name": "Code Tales",
+            "description": "Children oriented AI Generated tales about programming concepts. 🤖",
+            "github": "https://github.com/jpscardoso97/code-tales",
+            "technologies": ["Python", "Streamlit", "OpenAI", "Dall-E", "EdTech"]
+        },
+        {
+            "name": "Duke MEng in AI - ChatBot",
+            "description": "Q&A ChatBot for the Master's in AI at Duke University.",
+            "github": "https://github.com/jpscardoso97/dukeai-bot",
+            "technologies": ["Next.js", "Node.js", "ChromaDB", "RAG", "Ollama","Docker"]
+        }
+    ]
+} 

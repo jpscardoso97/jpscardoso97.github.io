@@ -1,0 +1,38 @@
+{
+    "jobs": [
+        {
+            "company": "Anchorage Digital",
+            "website": "https://www.anchorage.com",
+            "positions": [
+                {
+                    "title": "Member of Technical Staff - Transparency (Finance, Billing and Invoicing)",
+                    "period": "2025-Now"
+                }
+            ]
+        },
+        {
+            "company": "Yale University - BIDS",
+            "website": "https://medicine.yale.edu/biomedical-informatics-data-science/",
+            "positions": [
+                {
+                    "title": "Senior Software/AI Engineer",
+                    "period": "2024-2025"
+                }
+            ]
+        },
+        {
+            "company": "Farfetch",
+            "website": "https://www.farfetch.com",
+            "positions": [
+                {
+                    "title": "Software Engineer",
+                    "period": "2020-2023"
+                },
+                {
+                    "title": "Junior Software Engineer",
+                    "period": "2018-2020"
+                }
+            ]
+        }
+    ]
+} 

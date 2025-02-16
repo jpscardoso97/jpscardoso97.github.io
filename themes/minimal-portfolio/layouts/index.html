@@ -1,0 +1,111 @@
+{{ define "main" }}
+<div class="hero">
+    <h1>{{ .Site.Params.author }}</h1>
+    <p>{{ .Site.Params.description }}</p>
+</div>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    {{ with .Site.Data.about }}
+    <p class="intro">{{ .intro }}</p>
+    {{ range .paragraphs }}
+    <p>{{ . }}</p>
+    {{ end }}
+    
+    <div class="working-geniuses">
+        <h3>My Working Geniuses <a href="https://www.workinggenius.com/about" target="_blank" rel="noopener noreferrer">(What's this?)</a></h3>
+        {{ range .workingGeniuses }}
+        <div class="genius">
+            <h4>{{ .name }}</h4>
+            <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+
+<section id="experience" class="section">
+    <h2>Experience</h2>
+    {{ with .Site.Data.experience }}
+    {{ range .jobs }}
+    <div class="job">
+        <div class="job-header">
+            <a href="{{ .website }}" target="_blank" rel="noopener noreferrer"><h3>{{ .company }}</h3></a>
+        </div>
+        {{ range .positions }}
+        <div class="position-entry">
+            <div class="position-header">
+                <p class="position-title">{{ .title }}</p>
+                <span class="period">{{ .period }}</span>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+</section>
+
+<section id="education" class="section">
+    <h2>Education</h2>
+    {{ $schools := slice }}
+    {{ range .Site.Data.education.education }}
+        {{ if not (in $schools .school) }}
+            {{ $schools = $schools | append .school }}
+        {{ end }}
+    {{ end }}
+    {{ range $schools }}
+        {{ $school := . }}
+        <div class="education-item">
+            <div class="school-header">
+                <h3>{{ $school }}</h3>
+                {{ range $.Site.Data.education.education }}
+                    {{ if eq .school $school }}
+                        <span class="location">{{ .location }}</span>
+                        {{ break }}
+                    {{ end }}
+                {{ end }}
+            </div>
+            {{ range $.Site.Data.education.education }}
+                {{ if eq .school $school }}
+                <div class="degree-entry">
+                    <div class="degree-header">
+                        <a href="{{ .website }}" class="degree-link" target="_blank" rel="noopener noreferrer">{{ .degree }}</a>
+                        <span class="period">{{ .period }}</span>
+                    </div>
+                </div>
+                {{ end }}
+            {{ end }}
+        </div>
+    {{ end }}
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        {{ with .Site.Data.projects }}
+        {{ range .projects }}
+        <div class="project-card">
+            <div class="project-header">
+                <h3>{{ .name }}</h3>
+                <a href="{{ .github }}" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </div>
+            <p class="project-description">{{ .description }}</p>
+            <div class="project-technologies">
+                {{ range .technologies }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+    <div class="view-all">
+        <a href="https://github.com/jpscardoso97?tab=repositories" target="_blank" rel="noopener noreferrer">
+            View all projects
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+    </div>
+</section>
+{{ end }} 

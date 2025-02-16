@@ -1,0 +1,25 @@
+{
+    "education": [
+        {
+            "school": "Duke University",
+            "degree": "MEng in Artificial Intelligence",
+            "period": "2023-2024",
+            "website": "https://ai.meng.duke.edu/",
+            "location": "Durham, NC"
+        },
+        {
+            "school": "Politechnic of Porto (ISEP)",
+            "degree": "MSc in Software Engineering",
+            "period": "2016-2020",
+            "website": "https://www.isep.ipp.pt/Course/Course/87",
+            "location": "Porto, Portugal"
+        },
+        {
+            "school": "Politechnic of Porto (ISEP)",
+            "degree": "BSc in Computer Science",
+            "period": "2015-2018",
+            "website": "https://www.isep.ipp.pt/Course/Course/26",
+            "location": "Porto, Portugal"
+        }
+    ]
+} 
