@@ -2,6 +2,7 @@ baseURL = 'https://jpscardoso97.github.io/'
 languageCode = 'en-us'
 title = 'João Cardoso | Software Engineer'
 theme = 'minimal-portfolio'
+publishDir = "docs"
 
 [params]
   author = 'João Cardoso'
