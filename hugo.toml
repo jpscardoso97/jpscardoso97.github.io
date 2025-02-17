@@ -6,7 +6,7 @@ publishDir = "docs"
 
 [params]
   author = 'João Cardoso'
-  description = 'Software Engineer | Duke University Masters in Artificial Intelligence'
+  description = 'Senior Software Engineer | Duke University - Masters in Artificial Intelligence'
   github = 'https://github.com/jpscardoso97'
   linkedin = 'https://www.linkedin.com/in/joaopsc/'
   instagram = 'https://instagram.com/k4rd050'
